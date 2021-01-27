@@ -2,11 +2,27 @@ import json
 import helper
 
 def load_nobel_prizes(filename='prize.json'):
+    """
+    Read in the data from external json file
+    
+    """
     with open(filename) as infile:
         contents = json.load(infile)
     return contents
 
 def main(year, category):
+    """
+    Print out the results based on command line inputs
+    
+    Parameters:
+    -----------
+        year: int. If none, print out results of all recorded years if any (including all categories).
+        category: str. If none, print out results of all recorded categories if any (including all years if ).
+    
+    Returns:
+    --------
+        str. If year or category by comman line input do not exist in original json data, return None.
+    """
     data = load_nobel_prizes()
     prizes = data['prizes']
     for prize in prizes:
