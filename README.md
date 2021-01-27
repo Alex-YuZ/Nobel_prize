@@ -31,3 +31,6 @@ $ python3 nobel.py --year 1901 --category Economics
 
 ```
 The command-line arguments are the values passed to the main function.
+
+## References
+The prize data is from [here](https://api.nobelprize.org/v1/prize.json).
