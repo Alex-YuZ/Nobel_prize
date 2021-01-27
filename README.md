@@ -16,6 +16,10 @@ def main(year, category):
 ```
 This program will print out information about Nobel prizes (in any format you'd like). If a year is specified (not None), only print information about Nobel prizes from that year. If a category is specified (not None), only print information about Nobel prizes from that category.
 
+## About the data
+The prize data includes the years between 1901 to 2020.
+
+
 ## QuickStart
 This program is executed at the command line with arguments determined by a parser I wrote in the helper module.  
 So, you can run as follows,
