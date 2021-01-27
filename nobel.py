@@ -21,7 +21,7 @@ def main(year, category):
         for laureate in prize['laureates']:
             firstname = laureate['firstname']
             surname = laureate.get('surname', '')
-            print("{} {}: {}".format(firstname, surname, laureate['motivation']))
+            print("{} {}: {}\n".format(firstname, surname, laureate['motivation']))
             
 if __name__ == '__main__':
     parser = helper.build_parser()
